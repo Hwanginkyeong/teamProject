@@ -1,0 +1,326 @@
+@charset "UTF-8";
+
+/* 책 제목 */
+@font-face {
+    font-family: 'KOHIBaeumOTF';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/KOHIBaeumOTF.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 서평 쓰기 */ 
+@font-face {
+    font-family: 'Nanum Myeongjo';
+    src: url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* -------사이트 전체 적용------- */
+body, div, ul, li, dl, dt, ol, h1, h2, h3, h4, h5, 
+h6, input, fieldset, legend, p, select, table, th, 
+td, tr, textarea, button, form {
+    margin: 0; padding: 0;
+}
+/* clearfix */
+.clearfix{*zoom:1;}
+.clearfix:before, .clearfix:after {display: block; content: ""; line-height: 0;}
+.clearfix:after {clear: both;}
+
+body {
+    font-family: 'MinSans-Medium';
+    font-size: 12px;
+}
+
+#wrap {
+    width: 1130px;
+    margin: 0px auto;
+}
+
+/* 파란색 #2699fb */
+
+
+/* ---------------레이아웃-------------- */
+#header {
+    /* background-color: aqua; */
+    /* border: 2px solid #000000; */
+    padding: 30px 0px 30px 0px;
+    /* border-bottom: 2px solid #dddddd; */
+}
+
+#container {
+    padding: 40px 0px 10px 0px;
+    margin-bottom: 30px;
+
+}
+
+/* ---------헤더---------- */
+#header {
+    background-color: #FFFFFF;
+    transition: opacity 1s;
+}
+
+#header>a>img {
+    float: left;
+    width: 110px;
+    margin: 0px 40px 0px 10px;
+    cursor:pointer;
+}
+
+#header>ul>span>.img-circle {
+    width: 30px;
+    height: 30px;
+    cursor:pointer;
+}
+
+#header>ul>span {
+    cursor:pointer;
+}
+
+#header ul {
+    float: right;
+}
+
+#header>ul>li {
+    float:left;
+    padding: 10px 0px 10px 20px;
+}
+/* ---------//헤더---------- */
+
+
+/* 책 선택하기 */
+#contents #book_select h1 {
+	padding: 30px 0px 10px 0px;
+    margin: 50px 30px 10px 0px;
+	float:left;
+    font-family: 'KOHIBaeumOTF';
+    font-size: 25px;
+    color: #666666;
+}
+/* 책 선택하기 모달창 안 검색 박스*/
+.search_box{
+	float: center;
+	height: 50px;
+	width:500px;
+	border-radius:8px;
+}
+
+/* 감정 태그 */
+#contents #mood_tag h1 {
+	padding: 30px 0px 10px 0px;
+    margin: 50px 30px 10px 0px;
+	float:left;
+    font-family: 'KOHIBaeumOTF';
+    font-size: 25px;
+    color: #666666;
+}
+
+#btn_mood>button {
+	display:block;
+	float:left;
+    padding: 15px 40px 15px 40px;
+    margin: 5px;
+}
+
+
+/* 스타일 */
+#contents #style h1{
+	padding: 30px 0px 10px 0px;
+    margin: 200px 30px 10px 0px;
+	float:center; 
+    font-family: 'KOHIBaeumOTF';
+    font-size: 25px;
+    color: #666666;	
+}
+
+/* 스타일 선택 버튼 */
+.btn_style{
+	width: 70px;
+	height: 70px;
+	border-radius:50%;
+	border: none;
+	font-size:25px;
+	text-align:center;
+	line-height:30px;
+	margin-right:20px; 
+	background: #addddd; /* 여기 이미지 버튼으로 바꾸기  */
+}
+
+/* 서평 적는 공간 */
+#review_box{
+	padding: 30px;
+	height: 500px;
+    background: #2E8B57;	
+   /* background-image: url(/static/imagefarm/101074948/7jq08lxPGuzxsz0f1zZAJIH4xmwITUMM) */
+}
+
+#review{
+	margin: 15%;
+	color:#ffffff;
+	text-align:center;
+	font-size: 1.5em;
+	font-family: 'Nanum Myeongjo';
+	
+	/* position: absolute; */
+	/* top: 50%;
+	left: 50%; */
+}
+
+/* .input_review .p{
+    border-radius: 15px;
+    margin: 15px 0px 15px 0px;
+    padding: 35px 45px 35px 45px;
+    text-align: center;
+ 
+   
+} */
+
+
+/* 플레이리스트에 추가 */
+#contents #add_playlist h1 {
+	padding: 30px 0px 10px 0px;
+    margin: 50px 30px 10px 0px;
+    font-family: 'KOHIBaeumOTF';
+    font-size: 25px;
+    color: #666666;
+}
+
+
+/* 이미지 저장 */
+#contents #download_img h1 {
+	padding: 30px 0px 10px 0px;
+    margin: 50px 30px 10px 0px;
+    font-family: 'KOHIBaeumOTF';
+    font-size: 25px;
+    color: #666666;
+}
+
+/* 동그라미 버튼 */
+.btn_circle{
+	width: 70px;
+	height: 70px;
+	border-radius:50%;
+	border: none;
+	background: #adaaaa;
+	font-size:25px;
+	text-align:center;
+	line-height:30px;
+}
+
+/* 모달창 안에 돋보기 버튼 */
+.search_btn{
+	float:right;
+	height: 50px;
+	width:50px;
+} 
+
+/* 플레이리스트에 추가*/
+.modal-title{
+	float:left;
+}
+
+.cancle_btn{
+	float:right;
+}
+
+
+
+#btn_write {
+    float:right;
+    padding: 10px 60px 10px 60px;
+    background-color: #2699fb;
+}
+
+
+/* ------------컨텐츠 (책서평)---------------- */
+#contents_review>ul>li {
+    float:left;
+    margin: 0px 30px 0px 0px;
+}
+
+.review_list {
+    margin: 0px 0px 0px 40px;
+    font-size: 15px;
+}
+
+.jumbotron {
+    border-radius: 15px;
+    margin: 15px 0px 15px 0px;
+    padding: 35px 45px 35px 45px;
+}
+.jumbotron_2 {
+    border-radius: 15px;
+    margin: 15px 0px 15px 0px;
+    padding: 35px 45px 35px 45px;
+}
+
+#select_box{
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+
+#btn_admit{
+	height: 50px;
+	width:1110px;
+	display:block;
+}
+
+#btn_cancle{
+	height: 50px;
+	width:1110px;
+	margin: auto;
+}
+
+
+
+
+
+
+.jumbotron>div>.button {
+    font-size: 125px;
+    font-weight: bold;
+    color: #666666;
+    text-align: center;
+    line-height: 100px;
+
+   	margin-bottom: 40px;
+}
+
+
+
+.jumbotron>div>p {
+    color: #adaaaa;
+    text-align: center;
+    line-height: 100px;
+}
+
+#review_box>p {
+    color: #adaaaa;
+    text-align: center;
+    line-height: 500%;
+  
+}
+
+.review_like {
+    margin: 5px;
+}
+
+
+/* --------------footer------------- */
+#footer {
+    margin: 50px 0px 60px 0px;
+    border-top : 2px solid #e4e4e4;
+    padding: 15px 0px 0px 0px;
+    color: #666666;
+}
+#footer>div{
+    float: left;
+}
+#footer>a {
+    float: right;
+    margin: 18px 10px 0px 0px;
+}
+
+
+
